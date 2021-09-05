@@ -7,7 +7,7 @@ public class Test2 extends base{
 
 	@Test
 	public void FirstRun() throws IOException{
-		driver = initializeDriver();
+		driver = initDriver();
 		System.out.println("value of Test 2 is OK");
 		driver.get(prop.getProperty(urlname));
 		

@@ -30,7 +30,7 @@ public class ApiTest1 {
 	report.flush();
 	int code = resp.getStatusCode();
 	//String data = resp.getBody().prettyPrint();
-	//System.out.println("Status is "+code+" > "+URL);
+	System.out.println("Status is "+code+" > "+URL);
 	ExtentTest mylog1 = report.createTest("New tc 2");
 	mylog1.log(Status.INFO, "In progress");
 	System.out.println("Response time in milisec :"+resp.getTime());

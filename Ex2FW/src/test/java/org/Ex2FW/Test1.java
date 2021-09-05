@@ -9,7 +9,7 @@ public class Test1 extends base{
 
 	@Test
 	public void FirstRun() throws IOException{
-		driver = initializeDriver();
+		driver = initDriver();
 		System.out.println("value of my name is "+urlname);
 		driver.get(urlname);
 		LandingPage l = new LandingPage(driver);

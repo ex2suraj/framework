@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
+<suite name="Suite" parallel = "tests">
+  <test name="Test1">
     <classes>
-      <class name="org.Ex2FW.Test1"/>
-      <class name="org.Ex2FW.Test2"/>
+      <class name="org.Ex2FW.getWeather"/>
       <class name="org.Ex2FW.ApiTest1"/>
-      <class name="org.Ex2FW.Test3"/>
-      <class name="org.Ex2FW.AppTest"/>
-      <class name="org.Ex2FW.base"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+    <classes>
+      <class name="org.Ex2FW.jiratickets"/>
+      <class name="org.Ex2FW.DanRyanTest1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -11,7 +11,7 @@ public class Test4 extends base{
 	//Testcase for MI Homes - Kiosk //
 	@Test
 	public void FirstRun() throws IOException, InterruptedException{
-		driver = initializeDriver();
+		driver = initDriver();
 		System.out.println("value of my name is "+urlname);
 		String url = "https://charlotte-harlowscrossing.mikiosks.com/";
 		driver.get(url);

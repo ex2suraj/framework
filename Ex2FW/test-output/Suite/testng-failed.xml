@@ -1,26 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
     <classes>
-      <class name="org.Ex2FW.Test3">
+      <class name="org.Ex2FW.getWeather">
         <methods>
           <include name="destroyDriver"/>
-          <include name="FirstRun"/>
+          <include name="jira"/>
         </methods>
-      </class> <!-- org.Ex2FW.Test3 -->
-      <class name="org.Ex2FW.Test1">
-        <methods>
-          <include name="destroyDriver"/>
-          <include name="FirstRun"/>
-        </methods>
-      </class> <!-- org.Ex2FW.Test1 -->
-      <class name="org.Ex2FW.Test2">
-        <methods>
-          <include name="FirstRun"/>
-          <include name="destroyDriver"/>
-        </methods>
-      </class> <!-- org.Ex2FW.Test2 -->
+      </class> <!-- org.Ex2FW.getWeather -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

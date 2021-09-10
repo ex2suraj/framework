@@ -3,13 +3,12 @@
 <suite name="Suite" parallel = "tests">
   <test name="Test1">
     <classes>
-      <class name="org.Ex2FW.getWeather"/>
       <class name="org.Ex2FW.ApiTest1"/>
     </classes>
   </test> <!-- Test -->
   <test name="Test2">
     <classes>
-      <class name="org.Ex2FW.jiratickets"/>
+      <class name="org.Ex2FW.getWeather"/>
       <class name="org.Ex2FW.DanRyanTest1"/>
     </classes>
   </test> <!-- Test -->
